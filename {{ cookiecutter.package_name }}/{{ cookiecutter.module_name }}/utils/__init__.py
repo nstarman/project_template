@@ -1,4 +1,40 @@
-# Licensed under a 3-clause BSD style license - see LICENSE.rst
+# -*- coding: utf-8 -*-
+# see LICENSE.rst
 
-# This sub-module is destined for common non-package specific utility
-# functions.
+# ----------------------------------------------------------------------------
+#
+# TITLE   : Utilities
+# AUTHOR  : {{ cookiecutter.author_name }}
+# PROJECT : {{ cookiecutter.package_name }}
+#
+# ----------------------------------------------------------------------------
+
+"""Initialization file.
+
+This sub-module is destined for common non-package specific utility functions.
+
+Routine Listings
+----------------
+
+"""
+
+__author__ = "{{ cookiecutter.author_name }}"
+# __credits__ = [""]
+
+# __all__ = [
+#     ""
+# ]
+
+
+##############################################################################
+# IMPORTS
+
+# GENERAL
+
+# CUSTOM
+
+# PROJECT-SPECIFIC
+
+
+##############################################################################
+# END

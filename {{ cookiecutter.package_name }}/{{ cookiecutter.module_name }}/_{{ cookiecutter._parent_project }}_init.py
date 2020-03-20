@@ -1,6 +1,13 @@
-# Licensed under a 3-clause BSD style license - see LICENSE.rst
+# -*- coding: utf-8 -*-
+# see LICENSE.rst
+
+"""Setup Script."""
 
 __all__ = ['__version__']
+
+##############################################################################
+# CODE
+##############################################################################
 
 # this indicates whether or not we are in the package's setup.py
 try:
@@ -50,3 +57,9 @@ if not _ASTROPY_SETUP_:  # noqa
                     del e
                 except Exception:
                     raise orig_error
+
+# /if
+
+
+##############################################################################
+# END

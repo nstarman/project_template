@@ -1,4 +1,50 @@
-__all__ = ['primes', 'do_primes']
+# -*- coding: utf-8 -*-
+
+# ----------------------------------------------------------------------------
+#
+# TITLE   :
+# AUTHOR  :
+# PROJECT :
+#
+# ----------------------------------------------------------------------------
+
+"""**DOCSTRING**.
+
+description
+
+Routine Listings
+----------------
+
+"""
+
+__author__ = ""
+# __credits__ = [""]
+# __maintainer__ = ""
+
+
+__all__ = ['primes', 'do_primes', ]
+
+##############################################################################
+# IMPORTS
+
+# GENERAL
+
+import warnings
+import argparse
+from typing import Optional
+
+# CUSTOM
+
+# PROJECT-SPECIFIC
+
+
+##############################################################################
+# PARAMETERS
+
+
+##############################################################################
+# CODE
+##############################################################################
 
 
 def primes(imax):
@@ -39,6 +85,9 @@ def primes(imax):
     return result
 
 
+# ------------------------------------------------------------------------
+
+
 def do_primes(n, usecython=False):
     if usecython:
 {% if cookiecutter.use_compiled_extensions != 'y' %}
@@ -53,12 +102,30 @@ def do_primes(n, usecython=False):
         return primes(n)
 
 
-def main(args=None):
+##############################################################################
+# Command Line
+##############################################################################
 
-    from astropy.utils.compat import argparse
-    from time import time
 
-    parser = argparse.ArgumentParser(description='Process some integers.')
+def make_parser(inheritable=False):
+    """Expose parser for ``main``.
+
+    Parameters
+    ----------
+    inheritable: bool
+        whether the parser can be inherited from (default False).
+        if True, sets ``add_help=False`` and ``conflict_hander='resolve'``
+
+    Returns
+    -------
+    parser: ArgumentParser
+
+    """
+    parser = argparse.ArgumentParser(
+        description="",
+        add_help=~inheritable,
+        conflict_handler="resolve" if ~inheritable else 'error'
+    )
     parser.add_argument('-c', '--use-cython', dest='cy', action='store_true',
                         help='Use the Cython-based Prime number generator.')
     parser.add_argument('-t', '--timing', dest='time', action='store_true',
@@ -68,17 +135,65 @@ def main(args=None):
     parser.add_argument('n', metavar='N', type=int,
                         help='Get Prime numbers up to this number.')
 
-    res = parser.parse_args(args)
+    return parser
+
+# /def
+
+
+# ------------------------------------------------------------------------
+
+
+def main(
+    args: Optional[list] = None, opts: Optional[argparse.Namespace] = None
+):
+    """Script Function.
+
+    Parameters
+    ----------
+    args : list, optional
+        an optional single argument that holds the sys.argv list,
+        except for the script name (e.g., argv[1:])
+    opts : Namespace, optional
+        pre-constructed results of parsed args
+        if not None, used ONLY if args is None
+
+    """
+    if opts is not None and args is None:
+        pass
+    else:
+        if opts is not None:
+            warnings.warn('Not using `opts` because `args` are given')
+        parser = make_parser()
+        opts = parser.parse_args(args)
+
+    from time import time
 
     pre = time()
-    primes = do_primes(res.n, res.cy)
+    primes = do_primes(opts.n, opts.cy)
     post = time()
 
     print('Found {0} prime numbers'.format(len(primes)))
     print('Largest prime: {0}'.format(primes[-1]))
 
-    if res.time:
+    if opts.time:
         print('Running time: {0} s'.format(post - pre))
 
-    if res.prnt:
+    if opts.prnt:
         print('Primes: {0}'.format(primes))
+
+    return
+
+# /def
+
+
+# ------------------------------------------------------------------------
+
+if __name__ == "__main__":
+
+    main(args=None, opts=None)  # all arguments except script name
+
+# /if
+
+
+##############################################################################
+# END
