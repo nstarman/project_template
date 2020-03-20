@@ -1,0 +1,11 @@
+TITLE   : figures
+
+
+DESCRIPTION:
+————————————
+Sample presentation/figures folder
+
+
+FILES:
+——————
+/ figure_1		: files for figure 1

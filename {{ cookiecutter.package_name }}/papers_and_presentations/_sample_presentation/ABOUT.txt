@@ -1,0 +1,12 @@
+TITLE   : _sample
+
+
+DESCRIPTION:
+————————————
+Sample presentation folder
+
+
+FILES:
+——————
+. Template Presentation	: presentation
+/ figures		: figures for presentation
