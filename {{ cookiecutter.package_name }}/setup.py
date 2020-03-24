@@ -11,7 +11,6 @@ other information are set in the setup.cfg file.
 ##############################################################################
 # IMPORTS
 
-# GENERAL
 import os
 import sys
 

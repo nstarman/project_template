@@ -2,7 +2,7 @@
     "package_name": "packagename",
     "module_name": "{{ cookiecutter.package_name|lower()|replace(' ', '_') }}",
     "short_description": "{{ cookiecutter.package_name|replace('-', ' ')|replace('_', ' ') }}",
-    "author_name": "Astropy Developers",
+    "author_name": "NAME HERE",
     "author_email": "",
     "license": ["BSD 3-Clause", "GNU GPL v3+", "Apache Software Licence 2.0", "BSD 2-Clause", "Other"],
     "project_url": "http://docs.astropy.org/projects/package-template/",
