@@ -21,13 +21,12 @@ Routine Listings
 """
 
 __author__ = "{{ cookiecutter.author_name }}"
-# __copyright__ = "Copyright 2018, "
+# __copyright__ = "Copyright 2020, "
 # __credits__ = [""]
-# __license__ = ""
-# __version__ = "0.0.0"
 # __maintainer__ = ""
 # __email__ = ""
 # __status__ = "Production"
+
 
 # __all__ = [
 #     ""

@@ -1,7 +1,11 @@
-# This file is used to configure the behavior of pytest when using the Astropy
-# test infrastructure. It needs to live inside the package in order for it to
-# get picked up when running the tests inside an interpreter using
-# packagename.test
+"""Configure Test Suite.
+
+This file is used to configure the behavior of pytest when using the Astropy
+test infrastructure. It needs to live inside the package in order for it to
+get picked up when running the tests inside an interpreter using
+packagename.test
+
+"""
 
 import os
 
@@ -21,7 +25,13 @@ else:
 
 
 def pytest_configure(config):
+    """Configure Pytest with Astropy.
 
+    Parameters
+    ----------
+    config : pytest configuration
+
+    """
     if ASTROPY_HEADER:
 
         config.option.astropy_header = True
@@ -34,6 +44,35 @@ def pytest_configure(config):
         from . import __version__
         packagename = os.path.basename(os.path.dirname(__file__))
         TESTED_VERSIONS[packagename] = __version__
+
+    return
+
+# /def
+
+
+# ------------------------------------------------------
+
+@pytest.fixture(autouse=True)
+def add_units(doctest_namespace):
+    """Add Imports to Pytest.
+
+    Parameters
+    ----------
+    doctest_namespace : namespace
+
+    """
+    # import
+    import astropy.units
+    # add to namespace
+    doctest_namespace["u"] = astropy.units
+
+    return
+
+
+# def
+
+
+# ------------------------------------------------------
 
 # Uncomment the last two lines in this block to treat all DeprecationWarnings as
 # exceptions. For Astropy v2.0 or later, there are 2 additional keywords,

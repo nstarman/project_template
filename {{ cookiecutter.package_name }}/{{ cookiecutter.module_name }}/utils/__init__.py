@@ -13,13 +13,11 @@
 
 This sub-module is destined for common non-package specific utility functions.
 
-Routine Listings
-----------------
-
 """
 
 __author__ = "{{ cookiecutter.author_name }}"
 # __credits__ = [""]
+
 
 # __all__ = [
 #     ""

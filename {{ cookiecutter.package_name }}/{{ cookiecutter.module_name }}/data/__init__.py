@@ -16,9 +16,6 @@ the data should be read.
 DON`T PANIC.
 This module provides functions to read the contained data.
 
-Routine Listings
-----------------
-
 """
 
 __author__ = "{{ cookiecutter.author_name }}"
@@ -37,7 +34,6 @@ __author__ = "{{ cookiecutter.author_name }}"
 ###############################################################################
 # CODE
 ###############################################################################
-
 
 def function():
     """Docstring."""

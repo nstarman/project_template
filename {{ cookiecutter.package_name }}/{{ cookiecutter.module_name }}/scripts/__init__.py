@@ -19,9 +19,6 @@ code. The purpose of housing such code here is to minimize code repetition
 and expose the underlying scripts to the command line and import by
 other packages.
 
-Routine Listings
-----------------
-
 """
 
 __author__ = "{{ cookiecutter.author_name }}"
