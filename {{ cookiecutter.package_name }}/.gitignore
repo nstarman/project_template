@@ -76,6 +76,7 @@ docs/_build
 
 # Packages/installer info
 *.egg
+*.eggs
 *.egg-info
 dist
 build
@@ -96,6 +97,8 @@ distribute-*.tar.gz
 .project
 .pydevproject
 .settings
+.mypy_cache/
+.tmp/
 pip-wheel-metadata/
 
 # Mac OSX
@@ -111,3 +114,9 @@ pip-wheel-metadata/
 
 # Jupyter Notebook
 **.ipynb_checkpoints
+
+# Sublime Stuff
+*.sublime-workspace
+*.sublime-project
+/sftp-config-alt.json
+/sftp-config.json
