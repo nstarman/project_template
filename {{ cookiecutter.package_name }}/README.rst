@@ -1,5 +1,5 @@
-{{ cookiecutter.short_description }}
-{{ '-' * cookiecutter.short_description|length }}
+{{ cookiecutter.package_name }}
+{{ '=' * cookiecutter.package_name|length }}
 
 .. container::
 
