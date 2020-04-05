@@ -56,6 +56,7 @@ For further information on writing templates for cookiecutter see `the cookiecut
     :target: http://www.astropy.org
     :alt: Powered by Astropy Badge
 
-.. |travis cookiecutter| image:: https://travis-ci.org/nstarman/project-template.svg?branch=cookiecutter
-    :target: https://travis-ci.org/nstarman/project-template
+.. |travis cookiecutter| image:: https://travis-ci.com/nstarman/project_template.svg?branch=cookiecutter
+    :target: https://travis-ci.com/nstarman/project_template
     :alt: Travis cookiecutter badge
+
