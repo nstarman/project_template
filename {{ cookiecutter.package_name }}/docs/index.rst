@@ -62,3 +62,14 @@ If you make use of this code, please consider citing the Zenodo DOI as a softwar
    }
 
 .. |DOI| replace:: GET FROM ZENODO
+
+
+***************
+Project details
+***************
+
+.. toctree::
+   :maxdepth: 1
+
+   credits
+   whatsnew/index.rst
