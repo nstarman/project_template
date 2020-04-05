@@ -8,6 +8,7 @@ packagename.test
 """
 
 import os
+import pytest
 
 from astropy.version import version as astropy_version
 
