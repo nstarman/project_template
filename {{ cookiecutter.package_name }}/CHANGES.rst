@@ -8,7 +8,7 @@ New Features
 Description
 
 {{ cookiecutter.module_name }}
-{{ '*' * "%s"|format(cookiecutter.module_name)|length() }}
+{{ '^' * "%s"|format(cookiecutter.module_name)|length() }}
 
 - Change 1
 

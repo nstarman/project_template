@@ -1,6 +1,6 @@
-{{ '#' * "%s Documentation"|format(cookiecutter.package_name)|length() }}
-{{ cookiecutter.package_name }}
-{{ '#' * "%s Documentation"|format(cookiecutter.package_name)|length() }}
+{{ '#' * "`%s` Documentation"|format(cookiecutter.package_name)|length() }}
+`{{ cookiecutter.package_name }} Documentation
+{{ '#' * "`%s` Documentation"|format(cookiecutter.package_name)|length() }}
 
 This is the documentation for {{ cookiecutter.package_name }}.
 
@@ -19,6 +19,7 @@ Documentation
 
   {{ cookiecutter.module_name }}/index.rst
   documentation/testing.rst
+
 
 ***********
 Subpackages
@@ -46,13 +47,15 @@ Attribution
 
 |DOI|
 
-If you make use of this code, please consider citing the Zenodo DOI as a software citation::
+If you make use of this code, please consider citing the Zenodo DOI as a software citation
 
-   @software{{{ cookiecutter.package_name }}:zenodo,
-     author       = {{{ cookiecutter.author_name }}},
-     title        = {{{ cookiecutter.package_name }} v1.0},
-     month        = mar,
-     year         = 2020,
+::
+
+   @software{zenodo,
+     author       = {{ cookiecutter.author_name }},
+     title        = {{ cookiecutter.package_name }} v1.0,
+     month        = month,
+     year         = year,
      publisher    = {Zenodo},
      doi          = {},
      url          = {}

@@ -12,8 +12,6 @@ Documentation
 
 The documentation for ``{{ cookiecutter.package_name }}`` is hosted on `Read the docs <https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=latest>`_.
 
-The `wiki <https://github.com/{{ cookiecutter.github_project }}/wiki>`_ has miscellaneous coding / science tips and tricks.
-
 
 Installation and Dependencies
 -----------------------------
@@ -33,17 +31,20 @@ Attribution
 
 Example |DOI|
 
-If you make use of this code, please consider citing the Zenodo DOI |DOI| as a software citation::
+If you make use of this code, please consider citing the Zenodo DOI |DOI| as a software citation.
 
-   @software{{{ "%s:zenodo"|format(cookiecutter.package_name) }},
-     author       = {{{ cookiecutter.author_name }}},
-     title        = {{{ cookiecutter.package_name }} v1.0},
-     month        = mar,
-     year         = 2020,
+::
+
+   @software{zenodo,
+     author       = {{ cookiecutter.author_name }},
+     title        = {{ cookiecutter.package_name }} v1.0,
+     month        = month,
+     year         = year,
      publisher    = {Zenodo},
      doi          = {},
      url          = {}
    }
+
 
 License
 -------
@@ -58,8 +59,8 @@ Copyright 2018- {{ cookiecutter.author_name }} and contributors.
 
 .. |astropy| image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
    :target: http://www.astropy.org/
-.. |Build Status| image:: https://travis-ci.org/{{ cookiecutter.author_name }}/{{ cookiecutter.package_name }}.svg?branch=master
-   :target: https://travis-ci.org/{{ cookiecutter.author_name }}/{{ cookiecutter.package_name }}
+.. |Build Status| image:: https://travis-ci.org/{{ cookiecutter.github_project }}.svg?branch=master
+   :target: https://travis-ci.org/{{ cookiecutter.github_project }}
 .. |Code style: black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://github.com/psf/black
 .. |Documentation Status| image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=latest
