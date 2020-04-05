@@ -1,14 +1,61 @@
-Documentation
-=============
+{{ '#' * "%s Documentation"|format(cookiecutter.package_name)|length() }}
+{{ cookiecutter.package_name }}
+{{ '#' * "%s Documentation"|format(cookiecutter.package_name)|length() }}
 
 This is the documentation for {{ cookiecutter.package_name }}.
 
+The package is being actively developed in a `public repository on GitHub <https://github.com/{{ cookiecutter.github_project }}>`_ so if you have any trouble, `open an issue <https://github.com/{{ cookiecutter.github_project }}/issues>`_ there.
+
+.. image:: https://travis-ci.org/{{ cookiecutter.github_project }}.svg?branch=master
+    :target: https://travis-ci.org/{{ cookiecutter.github_project }}
+
+
+*************
+Documentation
+*************
+
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   {{ cookiecutter.module_name }}/index.rst
+  documentation/testing.rst
 
-.. note:: The layout of this directory is simply a suggestion.  To follow
-          traditional practice, do *not* edit this page, but instead place
-          all documentation for the package inside ``{{ cookiecutter.module_name }}/``.
-          You can follow this practice or choose your own layout.
+***********
+Subpackages
+***********
+
+.. toctree::
+   :maxdepth: 1
+
+   {{ cookiecutter.module_name }}/data/index
+
+
+*****************
+How to contribute
+*****************
+
+We welcome contributions from anyone via pull requests on `GitHub
+<https://github.com/{{ cookiecutter.github_project }}>`_. If you don't feel comfortable modifying or
+adding functionality, we also welcome feature requests and bug reports as
+`GitHub issues <https://github.com/{{ cookiecutter.github_project }}/issues>`_.
+
+
+***********
+Attribution
+***********
+
+|DOI|
+
+If you make use of this code, please consider citing the Zenodo DOI as a software citation::
+
+   @software{{{ cookiecutter.package_name }}:zenodo,
+     author       = {{{ cookiecutter.author_name }}},
+     title        = {{{ cookiecutter.package_name }} v1.0},
+     month        = mar,
+     year         = 2020,
+     publisher    = {Zenodo},
+     doi          = {},
+     url          = {}
+   }
+
+.. |DOI| replace:: GET FROM ZENODO

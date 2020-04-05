@@ -12,7 +12,7 @@ Documentation
 
 The documentation for ``{{ cookiecutter.package_name }}`` is hosted on `Read the docs <https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=latest>`_.
 
-The `wiki <https://github.com/{{ cookiecutter.author_name }}/{{ cookiecutter.package_name }}/wiki>`_ has miscellaneous coding / science tips and tricks.
+The `wiki <https://github.com/{{ cookiecutter.github_project }}/wiki>`_ has miscellaneous coding / science tips and tricks.
 
 
 Installation and Dependencies
@@ -41,8 +41,8 @@ If you make use of this code, please consider citing the Zenodo DOI |DOI| as a s
      month        = mar,
      year         = 2020,
      publisher    = {Zenodo},
-     doi          = {10.5281/zenodo.3724822},
-     url          = {https://doi.org/10.5281/zenodo.3724822}
+     doi          = {},
+     url          = {}
    }
 
 License
@@ -52,7 +52,7 @@ License
 
 Copyright 2018- {{ cookiecutter.author_name }} and contributors.
 
-``{{ cookiecutter.package_name }}`` is free software made available under the BSD-3 License. For details see the `LICENSE <https://github.com/{{ cookiecutter.author_name }}/{{ cookiecutter.package_name }}/blob/master/LICENSE>`_ file.
+``{{ cookiecutter.package_name }}`` is free software made available under the BSD-3 License. For details see the `LICENSE <https://github.com/{{ cookiecutter.github_project }}/blob/master/LICENSE>`_ file.
 
 
 
@@ -64,8 +64,7 @@ Copyright 2018- {{ cookiecutter.author_name }} and contributors.
    :target: https://github.com/psf/black
 .. |Documentation Status| image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=latest
    :target: https://{{ cookiecutter.package_name }}.readthedocs.io/en/latest/?badge=latest
-.. |DOI| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.3545178.svg
-   :target: https://doi.org/10.5281/zenodo.3545178
+.. |DOI| replace:: GET FROM ZENODO
 .. |License| image:: https://img.shields.io/badge/License-BSD%203--Clause-blue.svg
    :target: https://opensource.org/licenses/BSD-3-Clause
 .. |PyPI| image:: https://badge.fury.io/py/{{ cookiecutter.package_name }}.svg

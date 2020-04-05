@@ -1,0 +1,12 @@
+.. _whatsnew-1.0:
+
+{{ '*' * "What's New in `%s` v1.0.X?"|format(cookiecutter.package_name)|length() }}
+What's New in `{{ cookiecutter.package_name }}` v1.0.X?
+{{ '*' * "What's New in `%s` v1.0.X?"|format(cookiecutter.package_name)|length() }}
+
+Bug fixes (in X releases) are annotated with `@X`
+
+Overview
+========
+
+Adopted the Astropy-affiliate template.
