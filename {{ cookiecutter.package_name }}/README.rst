@@ -35,7 +35,7 @@ Example |DOI|
 
 If you make use of this code, please consider citing the Zenodo DOI |DOI| as a software citation::
 
-   @software{{{ cookiecutter.package_name }}:zenodo,
+   @software{{{ "%s:zenodo"|format(cookiecutter.package_name) }},
      author       = {{{ cookiecutter.author_name }}},
      title        = {{{ cookiecutter.package_name }} v1.0},
      month        = mar,
