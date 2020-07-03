@@ -5,6 +5,7 @@
 
    |astropy| |Build Status| |License| |Code style: black|
 
+
 Documentation
 -------------
 
@@ -19,19 +20,24 @@ Installation and Dependencies
 |PyPI|
 
 
-The easiest way to get Gala is to install with pip. To install with pip::
+The easiest way to get {{ cookiecutter.package_name }} is to install with pip. To install with pip::
 
     pip install {{ cookiecutter.package_name }}
 
 See the `installation instructions <https://readthedocs.org/projects/{{ cookiecutter.package_name }}/>`_ in the `documentation <https://readthedocs.org/projects/{{ cookiecutter.package_name }}/>`_ for more information.
 
 
+***********
 Attribution
------------
+***********
 
-Example |DOI|
+|DOI| |License|
 
-If you make use of this code, please consider citing the Zenodo DOI |DOI| as a software citation.
+Copyright 2020 - {{author_name}}.
+
+``{{ cookiecutter.package_name }}`` is free software made available under the BSD-3 License. For details see the `LICENSE <https://github.com/{{ github_project }}/blob/master/LICENSE>`_ file.
+
+If you make use of this code, consider citing the Zenodo DOI as a software citation
 
 ::
 
