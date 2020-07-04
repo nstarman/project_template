@@ -33,9 +33,9 @@ Attribution
 
 |DOI| |License|
 
-Copyright 2020 - {{author_name}}.
+Copyright 2020 - {{cookiecutter.author_name}}.
 
-``{{ cookiecutter.package_name }}`` is free software made available under the BSD-3 License. For details see the `LICENSE <https://github.com/{{ github_project }}/blob/master/LICENSE>`_ file.
+``{{ cookiecutter.package_name }}`` is free software made available under the BSD-3 License. For details see the `LICENSE <https://github.com/{{ cookiecutter.github_project }}/blob/master/LICENSE>`_ file.
 
 If you make use of this code, consider citing the Zenodo DOI as a software citation
 
