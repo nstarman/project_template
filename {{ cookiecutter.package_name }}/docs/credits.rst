@@ -1,3 +1,5 @@
+.. _{{ cookiecutter.package_name }}-credits:
+
 *******************
 Authors and Credits
 *******************
@@ -10,6 +12,8 @@ Main author:
 Core Package Contributors
 =========================
 
+|Contributors|
+
 All contributors (alphabetical last name):
 
 * {{ cookiecutter.author_name }}
@@ -18,4 +22,10 @@ All contributors (alphabetical last name):
 Credits
 =======
 
-* Astropy: package template
+* Nathaniel Starkman: `project_template <https://github.com/nstarman/project_template>`_
+* Astropy: `package template <https://github.com/astropy/package-template>`_
+  
+
+.. |Contributors| image:: https://img.shields.io/github/contributors/cwru-pat/{{ cookiecutter.package_name }}?style=flat
+   :alt: GitHub contributors
+

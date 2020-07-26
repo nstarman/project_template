@@ -1,3 +1,5 @@
+.. _{{ cookiecutter.package_name }}-whatsnew:
+
 *********************
 Major Release History
 *********************

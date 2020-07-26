@@ -14,3 +14,11 @@ The tests are written assuming they will be run with `pytest <http://doc.pytest.
 2. By cloning the ``{{ cookiecutter.module_name }}`` repository and running::
 
     python setup.py test
+
+
+Reference/API
+=============
+
+The test functions.
+
+.. currentmodule:: {{ cookiecutter.module_name }}.tests
