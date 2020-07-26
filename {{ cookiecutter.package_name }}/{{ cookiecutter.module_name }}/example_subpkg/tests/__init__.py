@@ -26,9 +26,9 @@ __author__ = "{{ cookiecutter.author_name }}"
 ##############################################################################
 # IMPORTS
 
-# GENERAL
+# BUILT-IN
 
-# CUSTOM
+# THIRD PARTY
 
 # PROJECT-SPECIFIC
 

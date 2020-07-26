@@ -27,13 +27,13 @@ __all__ = ['primes', 'do_primes', ]
 ##############################################################################
 # IMPORTS
 
-# GENERAL
+# BUILT-IN
 
 import warnings
 import argparse
-from typing import Optional
+import typing as T
 
-# CUSTOM
+# THIRD PARTY
 
 # PROJECT-SPECIFIC
 
@@ -144,7 +144,7 @@ def make_parser(inheritable=False):
 
 
 def main(
-    args: Optional[list] = None, opts: Optional[argparse.Namespace] = None
+    args: T.Optional[list] = None, opts: T.Optional[argparse.Namespace] = None
 ):
     """Script Function.
 

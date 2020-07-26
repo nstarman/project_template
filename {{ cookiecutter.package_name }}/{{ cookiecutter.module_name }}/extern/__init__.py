@@ -28,9 +28,9 @@ are external to it, and hence are developed in a separate source tree.
 ##############################################################################
 # IMPORTS
 
-# GENERAL
+# BUILT-IN
 
-# CUSTOM
+# THIRD PARTY
 
 # PROJECT-SPECIFIC
 

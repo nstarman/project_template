@@ -25,7 +25,10 @@ __author__ = "{{ cookiecutter.author_name }}"
 # __email__ = ""
 # __status__ = "Production"
 
-__all__ = []
+__all__ = [
+    # modules
+    # functions
+]
 
 
 ##############################################################################
@@ -45,6 +48,11 @@ from .example_mod import *   # noqa
 # __all__ += example_mod.__all__
 {%- endif %}
 
+# PROJECT-SPECIFIC
+
+# modules
+
+# functions
 
 ##############################################################################
 # END
