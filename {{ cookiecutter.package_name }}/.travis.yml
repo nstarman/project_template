@@ -156,16 +156,17 @@ matrix:
           env: TOXENV=linkcheck
 
 before_install:
- # skip travis build if [skip travis] or [travis skip] in commit message
- # built into travis, but a good reminder
- - if git show -s HEAD | grep -F -q "[skip travis]" ; then echo "skip travis" && exit 0 ; fi
- - if git show -s HEAD | grep -F -q "[travis skip]" ; then echo "skip travis" && exit 0 ; fi
-
-before_install:
     # Create a coverage.xml for use by coveralls or codecov
     - if [[ $TOXENV == *-cov ]]; then
         export TOXPOSARGS=$TOXPOSARGS" --cov-report=xml:"$TRAVIS_BUILD_DIR"/coverage.xml";
       fi
+
+    # skip travis build if [skip travis] or [travis skip] in commit message
+    # built into travis, but a good reminder
+    - if git show -s HEAD | grep -F -q "[skip travis]" ; then echo "skip travis" && exit 0 ; fi
+    - if git show -s HEAD | grep -F -q "[travis skip]" ; then echo "skip travis" && exit 0 ; fi
+    - if git show -s HEAD | grep -F -q "[skip ci]" ; then echo "skip travis" && exit 0 ; fi
+    - if git show -s HEAD | grep -F -q "[ci skip]" ; then echo "skip travis" && exit 0 ; fi
 
 install:
 
