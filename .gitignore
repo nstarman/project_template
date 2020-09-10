@@ -1,18 +1,6 @@
 ###############################################################################
 # Project-Specific
 
-## Papers and Presentations
-# ignores all contents except the figures & ABOUT.txt
-/papers_and_presentations/*/*
-!/papers_and_presentations/**/ABOUT.txt
-!/papers_and_presentations/**/figures/
-!/papers_and_presentations/**/figures/*
-# to not ignore a paper, add the path
-# ex: !/papers/_sample/
-
-# scratch folder
-scratch/
-
 # _old
 **/_old
 

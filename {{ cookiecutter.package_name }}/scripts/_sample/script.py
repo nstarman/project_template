@@ -1,59 +1,45 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# ----------------------------------------------------------------------------
-#
-# TITLE   :
-# PROJECT :
-#
-# ----------------------------------------------------------------------------
+"""script: **DESCRIPTION**."""
 
-### Docstring and Metadata
-"""script: **DOCSTRING**
-WARN: a version using the python logger is under development
-"""
+__author__ = ""
 
-__author__ = "AUTHOR"
 
 ##############################################################################
-### Imports
+# IMPORTS
 
-## General
-import os, sys, time, pdb, copy
+# BUILT-IN
+
+# THIRD-PARTY
+# import os, sys, time, pdb, copy
 # import numpy as np
 
-## Astropy
 # from astropy import units as u
 
-## Custom
+# CUSTOM
 
-## Project-Specific
-sys.path.insert(0, '../../')
-from src.util.logging import LogFile
+# PROJECT-SPECIFIC
 
 
 ##############################################################################
-### Parameters & Setup
+# PARAMETERS & SETUP
 
 # General
 _PLOT = True                                # Plot the output
 
 # Log file
 _VERBOSE = 0  # Degree of verbosity
-_LOGFILE = LogFile.open(f'./{__file__}.log',  # File
-                        header='script',  # script header
-                        verbose=_VERBOSE)  # setting as default
-
-
-# ----------------------------------------------------------------------------
-### Setup
+# TODO
 
 
 ##############################################################################
-### Running the Script
+# RUNNING THE SCRIPT
 
-_LOGFILE.write('Log this info', 'and this', 'and this', sep='__')
+# _LOGFILE.write('Log this info', 'and this', 'and this', sep='__')
+
 
 ##############################################################################
-### Closing
-_LOGFILE.close()
+# END
+
+# _LOGFILE.close()

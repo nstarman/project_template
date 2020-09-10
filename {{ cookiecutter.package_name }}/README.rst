@@ -22,7 +22,7 @@ Look in folder for paper
 
 CODE
 ----
-The code is included in the ``macro_lightning`` folder.
+The code is included in the ``{{ cookiecutter.module_name }}`` folder.
 
 
 Documentation
@@ -109,5 +109,14 @@ If you make use of this code, consider citing the Zenodo DOI as a software citat
 .. |PyPI Format| image:: https://img.shields.io/pypi/format/{{ cookiecutter.package_name }}?style=flat
    :alt: PyPI - Format
 
-.. |Code Size| image:: https://img.shields.io/github/languages/code-size/cwru-pat/{{ cookiecutter.package_name }}?style=flat
+.. |Code Size| image:: https://img.shields.io/github/languages/code-size/{{ cookiecutter.github_project }}?style=flat
    :alt: GitHub code size in bytes
+
+.. |Milestones| image:: https://img.shields.io/github/milestones/open/{{ cookiecutter.github_project }}?style=flat
+   :alt: GitHub milestones
+
+.. |Open Issues| image:: https://img.shields.io/github/issues-raw/{{ cookiecutter.github_project }}?style=flat
+   :alt: GitHub issues
+
+.. |Last Commit| image:: https://img.shields.io/github/last-commit/{{ cookiecutter.github_project }}/master?style=flat
+   :alt: GitHub last commit (branch)

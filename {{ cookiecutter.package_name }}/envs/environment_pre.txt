@@ -12,5 +12,3 @@ dependencies:
   - scipy
   - matplotlib
   - conda-forge::astropy
-  - pip:
-    - git+git://github.com/nstarman/astroPHD.git#egg=astroPHD

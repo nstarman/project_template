@@ -8,7 +8,7 @@ All code and data is available on a `public repository on GitHub <https://github
 
 .. container::
 
-    |DOI| |PyPI| |Build Status| |Coveralls| |astropy|
+    |DOI| |PyPI| |Build Status| |Codecov| |astropy|
 
 
 .. _index-documentation:
@@ -20,6 +20,7 @@ Documentation
 .. toctree::
   :maxdepth: 1
 
+  documentation/installation.rst
   {{ cookiecutter.module_name }}/index.rst
   documentation/testing.rst
 
@@ -101,3 +102,31 @@ Project details
    credits
    whatsnew/index.rst
    documentation/code_quality
+
+
+.. |astropy| image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
+   :target: http://www.astropy.org/
+
+.. |Build Status| image:: https://travis-ci.com/{{ cookiecutter.github_project }}.svg?branch=master
+    :target: https://travis-ci.com/{{ cookiecutter.github_project }}
+
+.. |Documentation Status| image:: https://readthedocs.org/projects/{{ cookiecutter.package_name }}/badge/?version=latest
+   :target: https://{{ cookiecutter.package_name }}.readthedocs.io/en/latest/?badge=latest
+
+.. |License| image:: https://img.shields.io/badge/License-BSD%203--Clause-blue.svg
+   :target: https://opensource.org/licenses/BSD-3-Clause
+
+.. |PyPI| image:: https://badge.fury.io/py/{{ cookiecutter.package_name }}.svg
+   :target: https://badge.fury.io/py/{{ cookiecutter.package_name }}
+
+.. |Milestones| image:: https://img.shields.io/github/milestones/open/{{ cookiecutter.github_project }}?style=flat
+   :alt: GitHub milestones
+
+.. |Open Issues| image:: https://img.shields.io/github/issues-raw/{{ cookiecutter.github_project }}?style=flat
+   :alt: GitHub issues
+
+.. |Last Commit| image:: https://img.shields.io/github/last-commit/{{ cookiecutter.github_project }}/master?style=flat
+   :alt: GitHub last commit (branch)
+
+.. |Codecov| image:: https://codecov.io/gh/{{ cookiecutter.github_project }}/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/{{ cookiecutter.github_project }}

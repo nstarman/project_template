@@ -51,5 +51,11 @@ if __name__ == '__main__':
         remove_file('{{ cookiecutter.module_name }}/example_mod.py')
         remove_file('{{ cookiecutter.module_name }}/tests/test_example.py')
 
+        # remove sample
+        remove_dir("{{ cookiecutter.module_name }}/../scripts/_sample/")
+        remove_dir("{{ cookiecutter.module_name }}/../notebooks/_sample/")
+        remove_dir("{{ cookiecutter.module_name }}/../docs/papers_and_presentations/_sample_paper/")
+        remove_dir("{{ cookiecutter.module_name }}/../docs/papers_and_presentations/_sample_presentation/")
+
     if '{{ cookiecutter.use_compiled_extensions }}' != 'y' or '{{ cookiecutter.include_example_code }}' != 'y':
         remove_file('{{ cookiecutter.module_name }}/example_c.pyx')

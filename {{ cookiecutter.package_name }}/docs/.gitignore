@@ -4,36 +4,6 @@
 ###############################################################################
 # Project-Specific
 
-## Papers and Presentations
-# ignores all contents except the figures & ABOUT.txt
-/papers_and_presentations/*/*
-!/papers_and_presentations/**/ABOUT.txt
-!/papers_and_presentations/**/figures/
-!/papers_and_presentations/**/figures/*
-# to not ignore a paper, add the path
-# ex: !/papers/_sample/
-
-# scratch folder
-scratch/
-
-# _old
-**/_old
-
-# scripts
-scripts/**/output
-
-# Environments subfolders
-envs/*/**
-
-# comment when done with public projects
-notebooks/**/*.png
-
-# un-comment these for projects before committing
-# papers_and_presentations/_sample_paper/*
-# papers_and_presentations/_sample_presentation/*
-# notebooks/_sample/*
-# scripts/_sample/*
-# {{ cookiecutter.module_name }}/_sample/*
 
 
 ###############################################################################
@@ -99,7 +69,7 @@ distribute-*.tar.gz
 pip-wheel-metadata/
 
 # Mac OSX
-.DS_Store
+*.DS_Store
 
 # Latex Files
 *.aux
