@@ -1,8 +1,15 @@
-#!/usr/bin/env python
-# Licensed under a 3-clause BSD style license - see LICENSE.rst
+# -*- coding: utf-8 -*-
+# see LICENSE.rst
 
-# NOTE: The configuration for the package, including the name, version, and
-# other information are set in the setup.cfg file.
+"""Setup Script.
+
+The configuration for the package, including the name, version, and
+other information are set in the setup.cfg file.
+
+"""
+
+##############################################################################
+# IMPORTS
 
 import os
 import sys
@@ -11,6 +18,10 @@ from setuptools import setup
 {% if cookiecutter.use_compiled_extensions == 'y' %}
 from extension_helpers import get_extensions
 {% endif %}
+
+
+##############################################################################
+# PARAMETERS
 
 # First provide helpful messages if contributors try and run legacy commands
 # for tests or docs.

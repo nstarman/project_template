@@ -1,11 +1,13 @@
-Astropy package template
-========================
+Research Project Template
+=========================
 
-|powered|   -   **cookiecutter branch:** |travis cookiecutter|   -   **master branch:** |travis master|
+.. container::
 
-This is a package template provided by the Astropy project.
+    |powered|   -   **cookiecutter branch:** |travis cookiecutter|
 
-Using this template, packages can make use of the setup, installation, and documentation
+This is a project template built upon the package template provided by the Astropy project.
+
+Using this project template, research projects can make use of the setup, installation, and documentation
 infrastructure developed for the ``astropy`` core and affiliated packages.
 
 For more information, see:
@@ -16,7 +18,7 @@ For more information, see:
 * `This template's Github code repository <https://github.com/astropy/package-template>`_
 
 
-Using this package template
+Using this project template
 ---------------------------
 
 Using cookiecutter
@@ -34,12 +36,12 @@ can be done easily using conda or pip::
   pip install cookiecutter gitpython
 
 
-Once you have cookiecutter installed you can run::
+Once you have cookiecutter installed you can run
+::
 
-  cookiecutter gh:astropy/package-template
+    cookiecutter gh:nstarman/project_template
 
-Which will ask you a series of questions to configure your package.
-
+Which will ask you a series of questions to configure your project.
 
 Manually
 ^^^^^^^^
@@ -52,7 +54,7 @@ are required.  For this reason the cookiecutter approach is recommended.
 
 
 
-Improving the package template
+Improving the project template
 ------------------------------
 
 If you want to modify this package template to add or fix things, the folder that
@@ -67,10 +69,6 @@ For further information on writing templates for cookiecutter see `the cookiecut
     :target: http://www.astropy.org
     :alt: Powered by Astropy Badge
 
-.. |travis cookiecutter| image:: https://travis-ci.org/astropy/package-template.svg?branch=cookiecutter
-    :target: https://travis-ci.org/astropy/package-template
+.. |travis cookiecutter| image:: https://travis-ci.com/nstarman/project_template.svg?branch=cookiecutter
+    :target: https://travis-ci.com/nstarman/project_template
     :alt: Travis cookiecutter badge
-
-.. |travis master| image:: https://travis-ci.org/astropy/package-template.svg?branch=master
-    :target: https://travis-ci.org/astropy/package-template
-    :alt: Travis master badge

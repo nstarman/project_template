@@ -1,7 +1,7 @@
 Package Setup Guide
 ===================
 
-To use the package template run ``cookiecutter gh:astropy/package-template``,
+To use the package template run ``cookiecutter gh:nstarman/project-template``,
 once you have run this command you will be asked a series of questions. Below is
 a description of each of the prompts.
 

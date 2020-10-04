@@ -1,6 +1,6 @@
-This file keeps track of changes between tagged versions of the Astropy
-package template, for the benefit of affiliated package maintainers. It can
-be removed in affiliated packages.
+This file keeps track of changes between tagged versions of the
+project template, for the benefit of affiliated package maintainers.
+It can be removed in affiliated packages.
 
 The changes below indicate what file the change was made in so that these can
 be copied over manually if desired.
