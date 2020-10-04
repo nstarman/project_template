@@ -1,3 +1,13 @@
+###############################################################################
+# Project-Specific
+
+# _old
+**/_old
+
+
+###############################################################################
+# Default
+
 # Compiled files
 *.py[cod]
 *.a
@@ -64,3 +74,9 @@ pip-wheel-metadata
 
 # Mac OSX
 .DS_Store
+
+# Sublime Text Stuff
+*.sublime-workspace
+*.sublime-project
+# sftp package in sublime
+/sftp-config*.json

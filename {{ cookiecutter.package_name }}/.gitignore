@@ -1,3 +1,19 @@
+# git-ignore file
+# split into default python and project-specific sections
+
+###############################################################################
+# Project-Specific
+
+# scratch folder
+scratch/
+
+# _old
+**/_old
+
+
+###############################################################################
+# Default
+
 # Compiled files
 *.py[cod]
 *.a
@@ -38,6 +54,7 @@ docs/_build
 
 # Packages/installer info
 *.egg
+*.eggs
 *.egg-info
 dist
 build
@@ -59,7 +76,31 @@ distribute-*.tar.gz
 .project
 .pydevproject
 .settings
+.mypy_cache/
+.tmp/
 pip-wheel-metadata/
 
 # Mac OSX
 .DS_Store
+
+# Latex Files
+*.aux
+*.blg
+*.gz
+*.out
+*.fls
+*.fdb_latexmk
+
+# Jupyter Notebook
+**.ipynb_checkpoints
+
+# Sublime Stuff
+*.sublime-workspace
+*.sublime-project
+/sftp-config*.json
+
+# R stuff
+.Rproj.use
+/.Rproj.user
+/.Rhistory
+/.RData
