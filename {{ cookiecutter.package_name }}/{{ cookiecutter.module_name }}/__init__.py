@@ -3,7 +3,7 @@
 # Packages may add whatever they like to this file, but
 # should keep this content at the top.
 # ----------------------------------------------------------------------------
-from ._{{ cookiecutter._parent_project }}_init import *   # noqa
+from ._{{ cookiecutter._parent_project }}_init import *   # noqa  # isort:skip
 # ----------------------------------------------------------------------------
 
 __all__ = []
