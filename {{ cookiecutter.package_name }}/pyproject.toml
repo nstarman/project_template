@@ -12,3 +12,38 @@ requires = ["setuptools",
             "wheel"]
 {% endif %}
 build-backend = 'setuptools.build_meta'
+
+
+{% if cookiecutter.pre_commit == 'y' %}
+[tool.isort]
+line_length = 79
+multi_line_output = 3
+include_trailing_comma = "True"
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+
+known_third_party = ["astropy", "astroquery", "extension_helpers", "matplotlib", "numpy", "pybtex", "pytest", "setuptools"]
+known_localfolder = "{{ cookiecutter.package_name }}"
+
+import_heading_stdlib = "BUILT-IN"
+import_heading_thirdparty = "THIRD PARTY"
+import_heading_firstparty = "FIRST PARTY"
+import_heading_localfolder = "PROJECT-SPECIFIC"
+
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+{% endif %}
