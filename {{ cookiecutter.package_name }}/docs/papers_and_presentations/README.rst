@@ -27,7 +27,7 @@ Citations:
 
     @article{code_{{ cookiecutter.package_name }},
            author = {},
-            title = {{{ cookiecutter.github_project }}: Code Release},
+            title = { {{ cookiecutter.github_project }}: Code Release},
         publisher = {Zenodo},
     }
 
