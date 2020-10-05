@@ -47,7 +47,7 @@ For more information, see:
   http://docs.astropy.org/en/latest/development/testguide.html#running-tests
 """
 
-if 'test' in sys.argv:
+if "test" in sys.argv:
     print(TEST_HELP)
     sys.exit(1)
 
@@ -72,7 +72,7 @@ For more information, see:
   http://docs.astropy.org/en/latest/install.html#builddocs
 """
 
-if 'build_docs' in sys.argv or 'build_sphinx' in sys.argv:
+if "build_docs" in sys.argv or "build_sphinx" in sys.argv:
     print(DOCS_HELP)
     sys.exit(1)
 
@@ -87,9 +87,21 @@ except Exception:
     version = '{version}'
 """.lstrip()
 
-setup(use_scm_version={'write_to': os.path.join('{{ cookiecutter.module_name }}', 'version.py'),
-                       'write_to_template': VERSION_TEMPLATE}
+
+##############################################################################
+# CODE
+##############################################################################
+
+
+setup(
+    use_scm_version={
+        'write_to': os.path.join('{{ cookiecutter.module_name }}', 'version.py'),
+        'write_to_template': VERSION_TEMPLATE}
 {%- if cookiecutter.use_compiled_extensions == 'y' %},
       ext_modules=get_extensions())
 {%- else %})
 {%- endif %}
+
+
+##############################################################################
+# END
