@@ -1,3 +1,16 @@
+# git-ignore file
+# split into default python and project-specific sections
+
+###############################################################################
+# Project-Specific
+
+# scratch folder
+scratch/
+
+
+###############################################################################
+# Default
+
 # Compiled files
 *.py[cod]
 *.a
