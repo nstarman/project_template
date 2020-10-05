@@ -136,6 +136,12 @@ matrix:
         #   stage: Initial tests
         #   env: TOXENV=codestyle
 
+        - os: linux
+          python: 3.8
+          name: Black style check
+          stage: Initial tests
+          env: TOXENV=black
+
 before_install:
     # Create a coverage.xml for use by coveralls or codecov
     - if [[ $TOXENV == *-cov ]]; then
