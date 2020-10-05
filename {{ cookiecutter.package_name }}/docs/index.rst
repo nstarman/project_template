@@ -7,6 +7,17 @@ This is the documentation for {{ cookiecutter.package_name }}.
   :maxdepth: 2
 
   {{ cookiecutter.module_name }}/index.rst
+.. _index-project_details:
+
+***************
+Project details
+***************
+
+.. toctree::
+   :maxdepth: 1
+
+   papers_and_presentations/README
+
 
 .. note:: The layout of this directory is simply a suggestion.  To follow
           traditional practice, do *not* edit this page, but instead place
