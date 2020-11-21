@@ -1,0 +1,19 @@
+# GitHub Actions workflow that runs on a cron schedule.
+
+name: Scheduled Repo Actions
+
+on:
+  schedule:
+    # run at midnight on the first of the month.
+    - cron: '0 0 1 * *'
+
+jobs:
+  # Create Default Labels
+  labels:
+    name: DefaultLabelsActions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@1.0.0
+      - uses: lannonbr/issue-label-manager-action@2.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,17 @@
+[
+    {"name": "Feature Request", "color": "bfdadc"},
+    {"name": "Docs", "color": "60d7e1"},
+    {"name": "Enhancement", "color": "f9d8c7"},
+    {"name": "Refactoring", "color": "fcf2c0"},
+    {"name": "question", "color": "2d6b75"},
+    {"name": "needs-discussion", "color": "621191"},
+    {"name": "Downstream Fix Required", "color": "000000"},
+    {"name": "needs-copyediting", "color": "f5c906", "description": "PRs that need copyediting"},
+    {"name": "copyedited", "color": "9384e0", "description": "PRs have been copyedited"},
+    {"name": "keep-open", "color": "368b16"},
+    {"name": "Ready for Final Review", "color": "368b16"},
+    {"name": "Bug", "color": "93f0c"},
+    {"name": ":fire:", "color": "93f0c", "description": "critical"},
+    {"name": "Manual Backport", "color": "93f0c"},
+    {"name": "Affects-dev", "color": "93f0c"},
+]
